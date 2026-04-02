@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  
+
+  <nav class="navbar">
+  <div class="logo">RESUME</div>
+  <ul class="nav-links"> 
+    <li><a href="#profile">Profile</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#portfolio">Portfolio</a> </li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+  
+<div id="profile" class="Profile">
+  <img class="pic" src="/images/doge.jpg" alt="PIC">
+  <h1>Hello <span id="visitor-name">there</span>! I'm John Dave P. Cinco</h1>
+  <p>Full Stack Developer</p>
+</div>
+
+<div id="education" class="Education section">
+  <h2 class="section-title">Education</h2>
+  <ul class="edu-list">
+    <li><strong>University of Science Technology Of Southern Philippines</strong></li>
+    <li><strong>Liceo De Cagayan University</strong></li>
+    <li><strong>East Gusa National High School</strong></li>
+  </ul>
+</div> 
+
+<div id="skills" class="Skills section">
+  <h2 class="section-title">Skills</h2>
+  <div class="skills-container">
+    <p>Python</p>
+    <p>Java</p>
+    <p>C#</p>
+    <p>JavaScript</p>
+    <p>HTML</p>
+    <p>CSS</p>
+  </div>
+</div>
+
+  
+<div id="portfolio" class="Portfolio section">
+  <h2 class="section-title">Portfolio</h2>
+  <div class="project-box">
+    
+    <div class="project-item">
+      <div class="project-header">
+        <p><strong>DreamHome</strong>: A Property Management System</p>
+        <button class="view-more-btn" onclick="toggleProject(this)">View More</button>
+      </div>
+      <div class="project-description">
+        <p>Developed a full-stack property management UI using Next.js. Integrated features for listing properties, managing bookings, and a dynamic dashboard for owners.</p>
+      </div>
+    </div>
+
+    <div class="project-item">
+      <div class="project-header">
+        <p><strong>NovaGaze</strong>: Eye Tracking AI for ALS patients</p>
+        <button class="view-more-btn" onclick="toggleProject(this)">View More</button>
+      </div>
+      <div class="project-description">
+        <p>An AI-powered assistive tool built with Python, OpenCV, and MediaPipe. It allows users with restricted mobility to navigate interfaces using iris tracking.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="contact" class="Contact section">
+  <h2 class="section-title">Contact Me</h2>
+  
+  <div class="contact-box">
+    <p><strong>Email:</strong> cinco.johndave46@gmail.com</p>
+    <p><strong>Phone:</strong> 09954982818</p>
+    <p><strong>Location:</strong> Cagayan de Oro, Philippines</p>
+
+    <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 20px 0;">
+
+    <form id="contactForm">
+      <input type="text" id="userName" placeholder="Your Name" required>
+      <textarea id="userMessage" placeholder="Your Message" required></textarea>
+      <button type="submit" class="view-more-btn">Send Message</button>
+    </form>
+
+    <p id="formFeedback"></p>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="/js/script.js" defer></script>
+</body>
+</html>
+
