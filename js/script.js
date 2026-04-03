@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
-    const visitorName = prompt("Hi there! What's your name?");
-    if (visitorName && visitorName.trim() !== "") {
-        $('#visitor-name').text(visitorName);
-    }
+        const visitorName = prompt("Hi there! What's your name?");
+            if (visitorName && visitorName.trim() !== "") {
+                document.getElementById("visitor-name").innerText = visitorName;
+        }
 
 
     $('.view-more-btn').on('click', function() {
@@ -12,7 +12,7 @@ $(document).ready(function () {
         
         description.toggleClass('show');
         
-        // Update button text and style dynamically
+
         if (description.hasClass('show')) {
             $(this).text("Close").addClass('active');
         } else {
