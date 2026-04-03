@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
         const visitorName = prompt("Hi there! What's your name?");
-            if (visitorName && visitorName.trim() !== "") {
-                document.getElementById("visitor-name").innerText = visitorName;
+        if (visitorName && visitorName.trim() !== "") {
+            document.getElementById("visitor-name").innerText = visitorName;
         }
 
 
@@ -19,25 +19,6 @@ $(document).ready(function () {
             $(this).text("View More").removeClass('active');
         }
     });
-
-
-    $('body').append('<button id="scrollTopBtn" title="Go to top">↑</button>');
-
-
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 200) {
-            $('#scrollTopBtn').fadeIn();
-        } else {
-            $('#scrollTopBtn').fadeOut();
-        }
-    });
-
-
-    $('#scrollTopBtn').on('click', function() {
-        $('html, body').animate({ scrollTop: 0 }, 600);
-        return false;
-    });
-
 
     $('#contactForm').on('submit', function(e) {
         e.preventDefault();
