@@ -1,5 +1,3 @@
-# WEBSYS PIT Project
-
 ## AI Tool Usage
 
 **AI Tool(s) Used:** Gemini  
@@ -14,6 +12,7 @@
 ☐ other: ____________
 
 **Where AI was used (short description):**  
+
 Mostly used for JavaScript and jQuery logic, event handling, and some CSS styling improvements.
 
 ---
